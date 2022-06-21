@@ -6,7 +6,8 @@
   "scripts": {
     "deploy": "yarn hardhat run scripts/deploy.js",
     "localhost:deploy": "yarn hardhat run scripts/deploy.js --network localhost",
-    "localhost:start": "yarn hardhat node"
+    "localhost:start": "yarn hardhat node",
+    "hardhat:console": "yarn hardhat console --network"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
