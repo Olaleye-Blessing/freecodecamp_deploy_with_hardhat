@@ -10,8 +10,8 @@ async function main() {
   console.log(`Deployed to Contract Address: ${simpleStorage.address}`);
 
   // only verify if contract is deployed to mainnet or testnet
-  console.log("Network config");
-  console.log(network.config);
+  // console.log("Network config");
+  // console.log(network.config);
 
   // rinkeby chainId is 4
   if (network.config.chainId === 4 && process.env.EHERSCAN_API_KEY) {

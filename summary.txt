@@ -1,0 +1,4 @@
++ hardhat localhost node
+hardhat network is different from localhost network tho it's using hardhat default environment
+
+add localhost network to hardhat.config.js so as to make use to localhost
