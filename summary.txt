@@ -2,3 +2,14 @@
 hardhat network is different from localhost network tho it's using hardhat default environment
 
 add localhost network to hardhat.config.js so as to make use to localhost
+
++ test
+it.only("run only this test", () => {})
+
+
+run test that has 'optimal' word
+it("this won't be considered", () => {})
+
+it("my optimal", () => {
+    console.log("this will run")
+})
