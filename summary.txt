@@ -13,3 +13,6 @@ it("this won't be considered", () => {})
 it("my optimal", () => {
     console.log("this will run")
 })
+
++ solidity coverage
+this plugin shows the lines of code that have no test

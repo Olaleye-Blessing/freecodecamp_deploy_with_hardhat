@@ -22,4 +22,24 @@ describe("SimpleTest", () => {
 
     expect(favNum).equal("22");
   });
+
+  it("people's length should be 0 on initialization", async () => {
+    let length = await simpleStorage.totalPeople();
+    assert.equal(length, 0);
+  });
+
+  it("people's length should be 2 after adding two people", async () => {
+    await simpleStorage.addPerson("Blessing", "22");
+    await simpleStorage.addPerson("Over", "22");
+
+    let length = await simpleStorage.totalPeople();
+    assert.equal(length, 2);
+  });
+
+  it("return the person's name that was added", async () => {
+    let name = "Blessing";
+    await simpleStorage.addPerson(name, "22");
+    let person = await simpleStorage.people(0);
+    assert.equal(person.name, name);
+  });
 });
